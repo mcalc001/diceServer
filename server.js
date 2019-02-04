@@ -26,10 +26,10 @@ app.get('/', (req, res) => {res.send('working!')} )
 app.post('/signin', signin.signinAuthentication(db, bcrypt))
 app.post('/register', (req, res) => { register.handleRegister(req, res, db, bcrypt)} )
 app.get('/signinpf/:id',(req, res) => { signinpf.signinProfileHandle(req, res, db, bcrypt)} )
-app.get('/profile/:id' , (req, res)=> { profile.profileHandle(req, res, db, bcrypt)} )
+app.get('/profile/:id' , (req, res)=> { profile.profileHandle(req, res, db, bcrypt)} 
 app.post('/profile/:id' ,(req, res)=> { profile.profileHandleUpdate(req, res, db)} )
 
-app.listen(process.env.PORT || 3000 ()=>{
+app.listen(process.env.PORT || 3000 ,()=>{
 	console.log('app is runnibg yay')
 });
 
