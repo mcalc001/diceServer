@@ -29,8 +29,8 @@ app.get('/signinpf/:id',(req, res) => { signinpf.signinProfileHandle(req, res, d
 app.get('/profile/:id' , (req, res)=> { profile.profileHandle(req, res, db, bcrypt)} )
 app.post('/profile/:id' ,(req, res)=> { profile.profileHandleUpdate(req, res, db)} )
 
-app.listen(process.env.PORT || 3000, ()=> {
-	console.log(`app is running on port 3000 ${process.env.PORT}`)
+app.listen(3000 || 3000, ()=> {
+	console.log(`app is running on port 3000 `)
 });
 
-
+// process.env.PORT
