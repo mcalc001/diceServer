@@ -2,10 +2,6 @@
 //get
 
 
-
-
-
-
  const profileHandle = (req, res, db, bcrypt)=> {
 	const { id } = req.params;
 	let found = false;
@@ -19,6 +15,7 @@
 	})
 	.catch(err => res.status(400).json('error getting user'))
 }
+
 
 
 

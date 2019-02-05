@@ -22,7 +22,7 @@ const handleSignin = (db, bcrypt, req, res) => {
 	  	}
 	  })
 	Promise.reject('wrong credentials')
-}
+} 
 
 const getAuthTokenId = (req, res) => {
   const {authorization} = req.headers;
